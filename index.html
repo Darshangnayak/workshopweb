@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Form</title>
+</head>
+<body>
+    <h2>Workshop Registration</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="workshop">Select Workshop:</label>
+        <select id="workshop" name="workshop" required>
+            <option value="">-- Select --</option>
+            <option value="web-development">Web Development</option>
+            <option value="ai-ml">AI & ML</option>
+            <option value="cyber-security">Cyber Security</option>
+        </select>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+    
+</body>
+</html>
